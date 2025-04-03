@@ -133,10 +133,10 @@ const App = () => {
 
       <section id="contact" className="contact">
         <h2>Contact Me</h2>
-        <form onSubmit={(e) => { e.preventDefault(); alert("Message sent!"); }}>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Message" required></textarea>
+        <form action="https://formspree.io/f/xkgjqbka" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Message" required></textarea>
           <button type="submit" className="btn">Send</button>
         </form>
       </section>
